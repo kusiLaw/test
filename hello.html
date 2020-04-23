@@ -1,55 +1,44 @@
 <!Doctype html>
+
 <html>
 <head>
-<!--<link rel="stylesheet" type="text/css" href="maque.css"> -->
-<style>
-.marquee {
-    position: relative;
-    overflow: hidden;
-    --offset: 20vw;
-    --move-initial: calc(-25% + var(--offset));
-    --move-final: calc(-50% + var(--offset));
-}
-
-.marquee__inner {
-    width: fit-content;
-    display: flex;
-    position: relative;
-    transform: translate3d(var(--move-initial), 0, 0);
-    animation: marquee 5s linear infinite;
-    animation-play-state: paused;
-}
-
-.marquee span {
-    font-size: 10vw;
-    padding: 0 2vw;
-}
-
-.marquee:hover .marquee__inner {
-    animation-play-state: running;
-}
-
-@keyframes marquee {
-    0% {
-        transform: translate3d(var(--move-initial), 0, 0);
-    }
-
-    100% {
-        transform: translate3d(var(--move-final), 0, 0);
-    }
-}
-</style>
 </head>
 
-<body onload = .marquee:hover>
-<div class="marquee">
-	<div class="marquee__inner" aria-hidden="true">
-		<span>lawrence </span><br>
-		<span>kusi</span><br>
-		<span>first</span><br>
-		<span>webpage</span><br>
-	</div>
+
+
+<body>
+<p style = "color : red; background-color: pink; border-bottom:8px solid black"> this must be red </p>
+
+<hr>
+
+<a href="tre.html">
+
+<img src = "feathers.jpg", alt = "feathers">
+</a>
+
+<table style = "width: 100% ; border : 1px solid red">
+	<tr>
+		<th>Header 1 </th>
+		<th>Header 2 </th>
+		<th>Header 3 </th>
+		<th>Header 4 </th>
+	</tr>
+	<tr>
+		<td>data 1</td>
+		<td>data 2</td>
+		<td>data 3</td>
+		<td>data 4</td>
+		
+	</tr>
+	<tr>
+		<td>data 1</td>
+		<td>data 2</td>
+		<td colspan = "2">data 3</td>
+	</tr>
+
+</table>
 
 </body>
+
 
 </html>
